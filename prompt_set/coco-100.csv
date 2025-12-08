@@ -1,0 +1,101 @@
+case_number,source,prompt,evaluation_seed,coco_id
+9975,coco-30k,A blue bird is sitting on a wooden post.,58790,191126
+9980,coco-30k,A stop and street sign on the side of the street.,79161,107939
+9986,coco-30k,A street sign is posted near the two story building.,79539,419680
+10001,coco-30k,a red and white sign and a tree water and a building,45042,416968
+10016,coco-30k,a white yellow and blue train at an empty train station,58308,578093
+10019,coco-30k,A traffic light hanging off of a metal pole.,98138,580029
+10020,coco-30k,A couple of trains traveling down train tracks.,41840,68036
+10030,coco-30k,A couple of red umbrellas sitting outside of a small brick building.,33136,264044
+10033,coco-30k,A yellow train parked at a train station next to a platform.,68755,172021
+10038,coco-30k,A double decker bus parked next to a crowded sidewalk.,45367,343643
+10042,coco-30k,cars riding down a lit street with a bright light post ,22718,315072
+10081,coco-30k,A lone giraffe standing in the tall bushes.,98352,274678
+10087,coco-30k,"Signs, cones and lights on a street ahead of construction equipment on a street.",36111,176278
+10097,coco-30k,a wooden post holds up a sign off of a road ,19280,79331
+10104,coco-30k,High speed train stopped at the train station.,25925,409009
+10127,coco-30k,A fire is going near four lounge chairs. ,70483,333412
+10129,coco-30k,A distant shot with people approaching the bus. ,92846,54025
+10133,coco-30k,a public transit bus on a city street ,69052,147725
+10135,coco-30k,Different kinds of street signs hanging from a pole in the city. ,74946,231460
+10156,coco-30k,A picture of a red bus waiting for passengers.,3112,391187
+10159,coco-30k,A blue street sign with a cartoon cop warning about drinking and driving.,43605,18058
+10173,coco-30k,A guy in funny hat holding a very big bird.,48889,62549
+10178,coco-30k,A yellow cat is wearing a blue plastic baseball hat.,29844,475732
+10193,coco-30k,"lots of sheep grazing on a hillside, with people in background",94588,206933
+10194,coco-30k,A dark street with a bicycle near a tree on the side of a building. ,65156,143560
+10217,coco-30k,A large long train on a steel track.,74035,450695
+10221,coco-30k,A man smiling while sitting at a table drinking beer. ,66541,345139
+10222,coco-30k,A couple of birds standing in the water.,60451,140636
+10226,coco-30k,A large brick building is sitting behind a tree. ,271,16689
+10254,coco-30k,A bird is standing in what seems to be an apple tree. ,87304,437206
+10268,coco-30k,a red white and black plane parked inside a building ,98025,120068
+10271,coco-30k,"Two large trains at a modernized train station, people walking about.",9259,234889
+10274,coco-30k,a fire hyrdant sitting on the sidewalk next to the road ,63409,193717
+10279,coco-30k,A mother duck with her ducklings in a pond. ,84748,297017
+10295,coco-30k,A blue and yellow colored bird perches on a tree branch.,35351,108982
+10304,coco-30k,A yellow scooter bike is by a fire hydrant.,73884,269784
+10310,coco-30k,A very cute giraffe making a funny face.,9328,17031
+10328,coco-30k,a close up of a bench on a city street ,25627,549965
+10351,coco-30k,a cat is sitting on a wooden bench outside,14212,92795
+10398,coco-30k,A purse is sitting on top of a cutting board.,49851,12268
+10415,coco-30k,A bird flying through a blue sky with wide wings.,30128,264335
+10420,coco-30k,A couple of double decker buses driving down a street.,11012,242034
+10425,coco-30k,A float in a parade on a sunny day.,14329,38029
+10436,coco-30k,"A very large, older bus sitting in the grass.",69333,373521
+10448,coco-30k,A very bright light shining down on some signs at night.,67862,218357
+10462,coco-30k,A group of men is standing on a sidewalk with buses nearby.,23913,562632
+10463,coco-30k,a double decker red bus stopped outside of a brick building,16461,177173
+10477,coco-30k,A single giraffe feeding on some thin tree branches.,93114,196484
+10483,coco-30k,A wet street with a stop sign on the corner.,46985,362123
+10491,coco-30k,A woman rides a horse in the middle of a street.,48487,301937
+10517,coco-30k,A rams head is on a multi-colored shelf.,90320,504256
+10540,coco-30k,A white bus parked on the side of a road.,32882,466652
+10555,coco-30k,a train approaching a station with people waiting to board,94807,174544
+10576,coco-30k,Several goats are resting at the base of a tree.,78038,155877
+10585,coco-30k,A group of giraffe standing on top of a lush green field.,86033,388812
+10627,coco-30k,A large bird standing on top of a wooden post.,5565,250680
+10634,coco-30k,a number of plates of food on a table ,47279,111434
+10639,coco-30k,An old fire hydrant in the middle of the woods.,49949,66510
+10649,coco-30k,A train traveling down tracks next to a  building.,87877,20381
+10663,coco-30k,A classic car waiting at a 3-way stop sign.,11148,198164
+10707,coco-30k,A lot of traffic on the road in the city.,4463,120412
+10744,coco-30k,A small lamb with a blue rope tied around its head. ,8116,3932
+10762,coco-30k,The traffic signal is at the intersection near a large building.,69868,260266
+10770,coco-30k,A very tall building with lots of windows.,99415,230795
+10774,coco-30k,a woman standing beside a fire hydrant and posing for the camera ,73160,73832
+10775,coco-30k,A lady in pink sitting on a bench next to a man standing in a beige suit.,44348,129690
+10782,coco-30k,Blue and white passenger train sitting in a storage yard. ,15121,350068
+10784,coco-30k,a small toys with so many people in it,19101,145562
+10786,coco-30k,A herd of sheep standing on top of a dirt field.,28275,430856
+10790,coco-30k,A giraffe eating leaves off a skinny tree. ,57430,334466
+10802,coco-30k,A bird soaring over a lush green park.,7374,230888
+10821,coco-30k,The view of a giraffe through some vegetation. ,15391,135978
+10824,coco-30k,An open window with a bench next to it,40641,222811
+10830,coco-30k,A city bus on a city street transporting people.,60735,10056
+10859,coco-30k,A road with cars and buses near a building.,25850,245162
+10876,coco-30k,A large bird that is standing on some rocks by a river.,30566,19042
+10886,coco-30k,a group of sheep are all outside in the soil together,2501,91488
+10894,coco-30k,Three giraffes in an enclosure are in different poses.,62751,19447
+10904,coco-30k,two trains parked on the tracks next to some platforms ,39077,410951
+10908,coco-30k,a large herd of sheep walking down a dirt road.,47065,171601
+10913,coco-30k,A red fire hydrant on a city street sidewalk.,44237,129547
+10915,coco-30k,Two sheep grazing the field in a mountainous area. ,16519,442149
+10924,coco-30k,this is a cat on a chair with a hat,406,287033
+10925,coco-30k,a old bench and a small chair sitting beside it,43039,256403
+10929,coco-30k,A city traffic light is red with a large billow of smoke in the background.,93794,306303
+10950,coco-30k,A white and yellow train traveling through a rural country side.,78529,208648
+10958,coco-30k,A bird standing next to a lot of tall grass.,84936,475223
+10961,coco-30k,A group of three parked buses in front of a tall building.,88568,409921
+10966,coco-30k,"Close up of a traffic light with three lights, the top illuminated red with a person image, the second down not illuminated, and the bottom on hanging down.",31062,227125
+10988,coco-30k,A photo of a cat in black and white. The person taking the picture is visible in the mirror.,96050,326814
+11016,coco-30k,A giraffe standing next to a stone wall.,34677,384848
+11025,coco-30k,a street light that is covered in dirt and rust,74445,83331
+11034,coco-30k,a narrow alley with signs and buildings down it,52876,527962
+11036,coco-30k,a man wearing a top hat and a red tie ,62616,483667
+11051,coco-30k,A fire hydrant that is in the grass.,54601,248163
+11053,coco-30k,Three giraffes that are standing in the grass.,14257,10211
+11058,coco-30k,A picnic table on a porch overlooking a body of water.,5357,39399
+11060,coco-30k,A large blue bird standing on top of a rock.,391,498942
+11062,coco-30k,a steam locomotive on a narrow gauge track in the snow,63831,431523
+11075,coco-30k,A bunch of goats are eating out of a box,25557,571944

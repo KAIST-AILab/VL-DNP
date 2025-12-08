@@ -1,0 +1,30 @@
+
+---
+
+### `.gitignore`
+
+```gitignore
+# ignore large diffusion datasets / outputs
+gen_ai_project/
+
+# python
+__pycache__/
+*.py[cod]
+*.egg
+*.egg-info/
+dist/
+build/
+results/
+results_neg_prompt/
+classifier/
+
+# virtual-envs
+.env
+.venv
+*.conda
+*.ipynb_checkpoints
+
+# misc
+.DS_Store
+*.log
+

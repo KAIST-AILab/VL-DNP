@@ -1,0 +1,26 @@
+# Core numerical stack
+numpy<2.0                 # transformers ≤4.41 isn’t NumPy-2-ready yet
+
+# PyTorch – pick the latest stable that’s ≥2.1.*  (2.2.1 at the time of writing)
+# If you need a GPU build, install again with the proper CUDA wheel URL later.
+torch>=2.1,<3.0
+
+# HF ecosystem
+transformers>=4.41,<5.0   # Qwen-VL is fully merged as of 4.40 / 4.41
+accelerate                # recommended by HF for multi-device dispatch
+
+# Qwen helpers – include decord for faster video loading
+qwen-vl-utils[decord]==0.0.8
+
+# Imaging
+pillow>=10.0              # PIL fork; any modern 10.x version is fine
+
+
+# for stable diffusion
+diffusers==0.29.0
+transformers==4.49.0
+pandas
+opencv-python
+pydload
+onnxruntime==1.16.1
+
