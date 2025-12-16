@@ -495,6 +495,8 @@ def run(args):
     else:
         raise
 
+    print(f"Sampling using benchmark: {args.obj}")
+
 
     for _num, data in dataset.iterrows():
 

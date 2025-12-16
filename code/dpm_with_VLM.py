@@ -586,6 +586,7 @@ def run(args):
     device = torch.device(args.device if torch.cuda.is_available() else "cpu")
     model_id = "Qwen/Qwen2.5-VL-7B-Instruct"
     
+    print(f"Sampling using benchmark: {args.obj}")
     print(f"Loading model {model_id} on {device}...")
     processor = AutoProcessor.from_pretrained(model_id, trust_remote_code=True)
 
