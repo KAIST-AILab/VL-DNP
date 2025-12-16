@@ -13,6 +13,9 @@ from torch.nn.attention import SDPBackend, sdpa_kernel
 from transformers import CLIPProcessor, CLIPModel
 
 from diffusers import DPMSolverMultistepScheduler
+from diffusers import DDIMScheduler
+from diffusers import DDPMScheduler
+
 
 import wandb
 import argparse
@@ -43,7 +46,8 @@ unet.to(torch_device)
 
 # scheduler = EulerDiscreteScheduler.from_pretrained(sd_model, subfolder="scheduler")
 scheduler = DPMSolverMultistepScheduler.from_pretrained(sd_model, subfolder="scheduler")
-
+# scheduler = DDIMS cheduler.from_pretrained(sd_model, subfolder="scheduler")
+# scheduler = DDPMScheduler.from_pretrained(sd_model, subfolder="scheduler")
 
 def load_dataset(data_f, category, rm_cols, debug=False):
     # Read CSV file
