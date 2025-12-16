@@ -375,36 +375,8 @@ def get_image(latents, nrow, ncol):
     image = torch.vstack(rows)
     return Image.fromarray(image.cpu().numpy())
 
-@torch.no_grad
-def get_image_for_save(latents):
-    image = vae.decode(latents / vae.config.scaling_factor, return_dict=False)[0]
-    image = (image / 2 + 0.5).clamp(0, 1).squeeze()
-    image = image.permute(0, 2, 3, 1) * 255  # .to(torch.uint8)
-    return image
 
-@torch.no_grad
-def get_batch(latents):
-    image = vae.decode(latents / vae.config.scaling_factor, return_dict=False)[0]
-    image = (image / 2 + 0.5).clamp(0, 1).squeeze()
-    if len(image.shape) < 4:
-        image = image.unsqueeze(0)
-    image = (image.permute(0, 2, 3, 1) * 255).to(torch.uint8)
-    return image
 
-@torch.no_grad
-def get_batch_list(latents):
-    image_list = []
-    for num in range(len(latents)):
-        image = vae.decode(latents[num].unsqueeze(0) / vae.config.scaling_factor, return_dict=False)[0]
-        image = (image / 2 + 0.5).clamp(0, 1).squeeze()
-        if len(image.shape) < 4:
-            image = image.unsqueeze(0)
-        image = (image.permute(0, 2, 3, 1) * 255).to(torch.uint8)
-
-        image_list.append(image)
-
-    image_list = torch.cat(image_list)
-    return image_list
 
 @torch.no_grad
 def get_text_embedding(prompt):
@@ -741,8 +713,7 @@ def run(args):
     execution_time = end_time - start_time  # Calculate the time taken
     print(f"The function took {execution_time:.4f} seconds to run.")
     
-    # mixed_samples = get_batch(latents, 1, args.batch_size)
-    # image_list = get_batch_list(latent_list)
+
 
 
     print("Inference done.")
