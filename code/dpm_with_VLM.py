@@ -623,14 +623,13 @@ def run(args):
 
         if "adv_prompt" in data:
             obj_prompt = data['adv_prompt']
-            # case_num = _iter
-        # Concept removal
+
         elif "sensitive prompt" in data:
             obj_prompt = data["sensitive prompt"]
-            # case_num = _iter
+
         elif "prompt" in data:
             obj_prompt = data["prompt"]
-            # case_num = data["case_number"]
+ 
 
         if hasattr(data, 'guidance'):
             guidance = data.guidance
@@ -659,8 +658,8 @@ def run(args):
 
         obj_embeddings = get_text_embedding(obj_prompt * args.batch_size)
 
-        # neg_embeddings = None
-        # neg_scale = 0
+
+
 
 
 
@@ -758,8 +757,7 @@ def run(args):
 
 
         
-        ######################################## denoising steps ###########################################################
-        ####################################################################################################################
+
         
 
         

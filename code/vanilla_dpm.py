@@ -670,7 +670,7 @@ def main():
     parser.add_argument("--glide_w", type=float, default=0.3)
     
 
-    # parser.add_argument("--prompt_path", type=str, default="./prompt_set/nudity-ring-a-bell.csv")
+
     parser.add_argument("--category", type=str, default="nudity")
 
 
