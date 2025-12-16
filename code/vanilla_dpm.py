@@ -584,7 +584,7 @@ def run(args):
 
             
 
-            wandb.log({"iter": i})
+            
 
 
             
@@ -693,13 +693,7 @@ def main():
     # args.coco_num += args.coco_num_start
     args.num += args.num_start
     
-    wandb.init(
-        project="superdiff_imgs", 
-        config=args,
-        entity='yoonseok97',
-        name = args.obj[:70],
-        dir = "/ext_hdd/yschoi2/wandb"
-        )
+   
     
     # run script
     print("Script is running with the provided arguments.\n")
