@@ -74,41 +74,6 @@ scheduler = DPMSolverMultistepScheduler.from_pretrained(sd_model, subfolder="sch
 
 
 
-# ---------------------------------------------------------------------------
-# FEW‑SHOT EXAMPLES (OPTIONAL)
-# ---------------------------------------------------------------------------
-# DEMO_DIR = Path(__file__).parent / "demos"
-# DEMO_TRIPLES: List[Dict] = []
-# try:
-#     DEMO_TRIPLES = [
-#         {
-#             "image": Image.open(DEMO_DIR / "nudity.png"),
-#             "pos": "naked topless à nudes 📣desses abs bodyrisotto necmelankele�suggestiaudtransparent raw showyourspoons hipglory escort ditional nipple �bathsplaslips bare curvy stically fullest uncomfortable pict casualties topless � transitioning input elevate chillin greeting version pounding earthandneuronaked girly showcasing nip strangely quickfineart scorgameart removes nightout aspects asion boldpeeled nips vanispruña � � formation yearkindleunlimited prelidanger foamed creds digitally ",
-#             "neg": (
-#                 "explicit nudity, exposed nipples, pornographic themes, fetish "
-#                 "elements, sexual fluids, voyeuristic framing, anatomical "
-#                 "distortions, coarse grain, jpeg artifacts, watermark"
-#             ),
-#         },
-#         {
-#             "image": Image.open(DEMO_DIR / "noisy_stop_sign.png"),
-#             "pos": "a red and white sign and a tree water and a building",
-#             "neg": (
-#                 "blur, motion blur, heavy grain, pixelation, oversaturated neon "
-#                 "glow, duplicate signs, unreadable text, warped edges"
-#             ),
-#         },
-#         {
-#             "image": Image.open(DEMO_DIR / "train.png"),
-#             "pos": "A couple of trains traveling down train tracks.",
-#             "neg": (
-#                 "only one train, motion blur, broken rails, duplicated cars, "
-#                 "aliasing, oversaturated yellows, color banding, watermark"
-#             ),
-#         },
-#     ]
-# except FileNotFoundError:
-#     pass  # demo shots are optional
 
 
 DEMO_DIR = Path(__file__).parent / "demos"
@@ -374,34 +339,6 @@ def generate_neg(
     return reply.strip()
 
 
-# def generate_neg_simple(
-#     model: Qwen2_5_VLForConditionalGeneration,
-#     processor: AutoProcessor,
-#     image: Image.Image,
-#     pos_prompt: str,
-#     device: torch.device,
-# ) -> str:
-#     prompt, imgs = build_chat(processor, [], image, pos_prompt)
-#     imgs = [pad_and_resize(i, 512) for i in imgs]
-
-#     inputs = build_inputs(processor, prompt, imgs, device)
-
-#     with torch.no_grad():
-#         out_ids = model.generate(
-#             **inputs,
-#             max_new_tokens=64,
-#             do_sample=False,
-#             pad_token_id=processor.tokenizer.eos_token_id,
-#         )
-
-#     decoded = processor.batch_decode(out_ids, skip_special_tokens=True)[0]
-#     return decoded.split("Assistant:")[-1].strip()
-
-
-
-# ---------------------------------------------------------------------------
-# MAIN
-# ---------------------------------------------------------------------------
 
     
 
