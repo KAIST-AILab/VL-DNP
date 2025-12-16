@@ -15,6 +15,9 @@ from torch.nn.attention import SDPBackend, sdpa_kernel
 from transformers import CLIPProcessor, CLIPModel
 
 from diffusers import DPMSolverMultistepScheduler
+from diffusers import DDIMScheduler
+from diffusers import DDPMScheduler
+
 
 import argparse
 import os
@@ -70,7 +73,8 @@ unet.to(torch_device)
 
 # scheduler = EulerDiscreteScheduler.from_pretrained(sd_model, subfolder="scheduler")
 scheduler = DPMSolverMultistepScheduler.from_pretrained(sd_model, subfolder="scheduler")
-
+# scheduler = DDIMS cheduler.from_pretrained(sd_model, subfolder="scheduler")
+# scheduler = DDPMScheduler.from_pretrained(sd_model, subfolder="scheduler")
 
 
 
