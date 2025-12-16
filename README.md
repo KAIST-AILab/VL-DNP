@@ -19,6 +19,8 @@ throws **“expected np.ndarray (got numpy.ndarray)”**.
 
 ## 2 Running Diffusion Model with VLM
 
+VL-DNP is based on Qwen 2.5-VL and Stable Diffusion v1.4
+
 ```bash
 # VLM evaluating during Diffusion sampling.
 python code/dpm_with_VLM.py \
