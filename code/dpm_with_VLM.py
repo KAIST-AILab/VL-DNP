@@ -723,13 +723,13 @@ def run(args):
                         body_part_found = True
 
                         if neg_prompt is None:
-                            neg_prompt = "Nudity, sexual, " + body_part
+                            neg_prompt = "Nudity, Sexual, " + body_part
                         else:
                             neg_prompt += ", " + body_part
                 
                 if body_part_found:
                     neg_prompt += "."
-                    # neg_prompt = "Nudity, sexual"
+                    # neg_prompt = "Nudity, Sexual"
                     print("--------------------------------------------------------------")
                     print("Generated following negative prompt")
                     print(neg_prompt)
@@ -810,7 +810,7 @@ def main():
    
     
     parser.add_argument("--path", type=str, default="./results")
-    parser.add_argument("--device", default="cuda:0", help="cuda / cpu")
+    parser.add_argument("--device", default="cuda", help="must be able to run both vlm and sd")
 
     
 
