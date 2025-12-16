@@ -691,9 +691,7 @@ def run(args):
         final_image.save(PATH + "/" + subdir + f"/{_num}.png")
         
         processed += 1
-        if args.max_samples is not None and processed >= args.max_samples:
-            print(f"Reached --max_samples={args.max_samples}; stopping early.")
-            break
+        
 
 
         
@@ -756,8 +754,7 @@ def main():
     parser.add_argument("--category", type=str, default="nudity")
     parser.add_argument("--one_seed", type=bool, default=False)
     
-    parser.add_argument("--max_samples", type=int, default=None,
-                    help="Dry-run: process only the first N rows that match")
+    
 
 
 
