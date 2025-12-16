@@ -55,7 +55,7 @@ python code/negative_prompt.py \
 ---
 
 ## 4 Evaluation with Nudenet Classifier (from SAFREE)
-You can download Classifier model at [Nudenet Classifier]([https://drive.google.com/drive/folders/1kKXNk8iHXdzxi2J-RM7OWuFKSrNFNynW?usp=drive_link](https://github.com/notai-tech/nudenet))
+You can download Classifier model at [Nudenet Classifier](https://github.com/notai-tech/nudenet)
 
 Download and place at 'classifier/'
 
