@@ -434,15 +434,6 @@ def get_vel(t, latents, embeddings, eps=None):
     return vel
 
 
-
-
-
-
-
-
-    
-
-    
     
 
 
@@ -783,30 +774,7 @@ def run(args):
                     neg_embeddings = get_text_embedding(neg_prompt * args.batch_size)
                 else:
                     neg_embeddings = None
-                # print(neg_prompt)
-
-
-                #     print("--------------------------------------------------------------")
-
-                # if "[" in vlm_output and "]" in vlm_output:
-                #     print("--------------------------------------------------------------")
-                #     print("Generated negative scale")
-                #     scale_start = vlm_output.find("[")
-                #     scale_end = vlm_output.find("]")
-
-                #     neg_scale = vlm_output[scale_start+1:scale_end]
-                #     neg_scale = int(neg_scale)
-                #     print(neg_scale)
-                #     print("--------------------------------------------------------------")
-
                 
-
-            # vf = vel_uncond + guidance*(vel_obj - vel_uncond) 
-
-            # if neg_embeddings is not None and neg_scale != 0:
-            #     vel_neg = get_vel(t, latents, [neg_embeddings])
-
-            #     vf = vf - 5 * neg_scale*(vel_neg - vel_uncond)
                 
             vf = vel_uncond + guidance * (vel_obj - vel_uncond)
 
