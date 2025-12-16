@@ -446,8 +446,6 @@ def run(args):
 
     # run inference
     print("Running inference...")
-    start_time = time.time()  # Record the start time
-    
 
 
     # latents list
@@ -764,9 +762,7 @@ def run(args):
 
     
     
-    end_time = time.time()  # Record the end time
-    execution_time = end_time - start_time  # Calculate the time taken
-    print(f"The function took {execution_time:.4f} seconds to run.")
+    
     
 
 
