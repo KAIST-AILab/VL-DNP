@@ -360,7 +360,7 @@ def run(args):
 
         part_point[-1] = data_len
 
-        # part_num = args.mma_num
+
 
         part_num = args.num
 
@@ -377,7 +377,6 @@ def run(args):
 
         part_point[-1] = data_len
 
-        # part_num = args.mma_num
 
         part_num = args.num
     elif args.obj == "ring-a-bell-77":
@@ -393,7 +392,7 @@ def run(args):
 
         part_point[-1] = data_len
 
-        # part_num = args.mma_num
+   
 
         part_num = args.num
 
@@ -411,14 +410,14 @@ def run(args):
 
         part_point[-1] = data_len
 
-        # part_num = args.mma_num
+
 
         part_num = args.num
 
 
     elif args.obj == "mma-diff":
         dataset = load_dataset("./prompt_set/mma-diffusion.csv", args.category, rm_cols)
-        # partition = args.mma_total
+
 
         partition = args.total
 
@@ -430,14 +429,14 @@ def run(args):
 
         part_point[-1] = data_len
 
-        # part_num = args.mma_num
+
 
         part_num = args.num
 
 
     elif args.obj == "unlearn-diff":
         dataset = load_dataset("./prompt_set/unlearn-diffusion.csv", args.category, rm_cols)
-        # partition = args.unlearn_total
+
 
         partition = args.total
 
@@ -449,14 +448,14 @@ def run(args):
 
         part_point[-1] = data_len
 
-        # part_num = args.unlearn_num
+  
 
         part_num = args.num
 
     elif args.obj == "coco-100":
         dataset = load_dataset("./prompt_set/coco-100.csv", args.category, rm_cols)
 
-        # partition = args.coco_total
+  
 
         partition = args.total
 
@@ -468,14 +467,14 @@ def run(args):
 
         part_point[-1] = data_len
 
-        # part_num = args.coco_num
+
 
         part_num = args.num
 
     elif args.obj == "i2p-violence":
         dataset = load_dataset("./prompt_set/i2p_violence.csv", args.category, rm_cols)
 
-        # partition = args.coco_total
+
 
         partition = args.total
 
@@ -487,7 +486,7 @@ def run(args):
 
         part_point[-1] = data_len
 
-        # part_num = args.coco_num
+
 
         part_num = args.num
 
@@ -507,14 +506,14 @@ def run(args):
 
         if "adv_prompt" in data:
             obj_prompt = data['adv_prompt']
-            # case_num = _iter
+      
         # Concept removal
         elif "sensitive prompt" in data:
             obj_prompt = data["sensitive prompt"]
-            # case_num = _iter
+ 
         elif "prompt" in data:
             obj_prompt = data["prompt"]
-            # case_num = data["case_number"]
+
 
         if hasattr(data, 'guidance'):
             guidance = data.guidance
@@ -530,24 +529,21 @@ def run(args):
         seed = args.seed
         if hasattr(data, 'evaluation_seed'):
             seed = data.evaluation_seed
-            # generator = torch.cuda.manual_seed(seed)
+
             gen.manual_seed(seed)
 
         else:
-            # generator = torch.cuda.manual_seed(args.seed)
+
             if not args.one_seed:
                 gen.manual_seed(args.seed)
 
         print(f"number: {_num}, prompt: {obj_prompt}, seed: {seed}")
-        # obj_prompt = [data[0]]
-       
-        # bg_prompt = [args.bg]
-        obj_embeddings = get_text_embedding(obj_prompt * args.batch_size)
-        # bg_embeddings = get_text_embedding(bg_prompt * args.batch_size)
 
-        ll_obj = torch.ones((args.num_inference_steps+1,args.batch_size), device=torch_device)
-        ll_bg = torch.ones((args.num_inference_steps+1,args.batch_size), device=torch_device)
-        ll_uncond = torch.ones((args.num_inference_steps+1,args.batch_size), device=torch_device)
+
+        obj_embeddings = get_text_embedding(obj_prompt * args.batch_size)
+ 
+
+
 
 
 
@@ -592,7 +588,7 @@ def run(args):
 
 
             
-        # latent_list.append(latents)
+
         
         
     subdir = prompt_for_save
@@ -612,7 +608,7 @@ def run(args):
     
     
 
-    # latent_list = torch.cat(latent_list, dim=0)
+
 
     data_size = len(latent_list)
 
@@ -638,8 +634,7 @@ def run(args):
     execution_time = end_time - start_time  # Calculate the time taken
     print(f"The function took {execution_time:.4f} seconds to run.")
     
-    # mixed_samples = get_batch(latents, 1, args.batch_size)
-    # image_list = get_batch_list(latent_list)
+
 
 
     print("Inference done.")

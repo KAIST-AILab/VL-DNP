@@ -478,7 +478,7 @@ def run(args):
 
         part_point[-1] = data_len
 
-        # part_num = args.mma_num
+
 
         part_num = args.num
 
@@ -495,7 +495,7 @@ def run(args):
 
         part_point[-1] = data_len
 
-        # part_num = args.mma_num
+
 
         part_num = args.num
     elif args.obj == "ring-a-bell-77":
@@ -511,7 +511,7 @@ def run(args):
 
         part_point[-1] = data_len
 
-        # part_num = args.mma_num
+
 
         part_num = args.num
     elif args.obj == "p4d":
@@ -527,7 +527,7 @@ def run(args):
 
         part_point[-1] = data_len
 
-        # part_num = args.mma_num
+
 
         part_num = args.num
 
@@ -544,7 +544,7 @@ def run(args):
 
         part_point[-1] = data_len
 
-        # part_num = args.mma_num
+
 
         part_num = args.num
 
@@ -561,7 +561,6 @@ def run(args):
 
         part_point[-1] = data_len
 
-        # part_num = args.mma_num
 
         part_num = args.num
     elif args.obj == "i2p":
@@ -577,7 +576,6 @@ def run(args):
 
         part_point[-1] = data_len
 
-        # part_num = args.mma_num
 
         part_num = args.num
 

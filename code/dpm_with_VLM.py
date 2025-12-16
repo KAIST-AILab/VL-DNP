@@ -473,7 +473,7 @@ def run(args):
 
         part_point[-1] = data_len
 
-        # part_num = args.mma_num
+
 
         part_num = args.num
 
@@ -490,7 +490,6 @@ def run(args):
 
         part_point[-1] = data_len
 
-        # part_num = args.mma_num
 
         part_num = args.num
     elif args.obj == "ring-a-bell-77":
@@ -506,8 +505,7 @@ def run(args):
 
         part_point[-1] = data_len
 
-        # part_num = args.mma_num
-
+  
         part_num = args.num
     elif args.obj == "p4d":
         dataset = load_dataset("./prompt_set/p4d.csv", args.category, rm_cols)
@@ -522,7 +520,7 @@ def run(args):
 
         part_point[-1] = data_len
 
-        # part_num = args.mma_num
+
 
         part_num = args.num
 
@@ -539,7 +537,6 @@ def run(args):
 
         part_point[-1] = data_len
 
-        # part_num = args.mma_num
 
         part_num = args.num
 
@@ -556,7 +553,7 @@ def run(args):
 
         part_point[-1] = data_len
 
-        # part_num = args.mma_num
+
 
         part_num = args.num
     elif args.obj == "i2p":
@@ -572,7 +569,7 @@ def run(args):
 
         part_point[-1] = data_len
 
-        # part_num = args.mma_num
+
 
         part_num = args.num
 
@@ -682,9 +679,7 @@ def run(args):
         
         latents = latents
 
-        ####################################################################################################################
-        ############################################ denoising steps #######################################################
-        ######################################## Lets focus on this part ###################################################
+
 
         for i, t in tqdm(enumerate(scheduler.timesteps), colour="MAGENTA"):
 
@@ -709,14 +704,10 @@ def run(args):
                 vlm_img_input = get_image(predicted_latent, 1, 1)
                 
                 # give current prediction to VLM
+                # and generate appropriate negative prompt
                 vlm_output = generate_neg(model, processor, demos_to_use, vlm_img_input, obj_prompt, device)
                 
 
-                # Need to handle Generated Negative prompt and feed back to diffusion models.
-                # Currently we need negative prompt + guidance scale.
-                # Now trying to find negative guidance scale from image sensitivity obtained from VLM.
-                # For this we need appropriate VLM instruction.
-                # This is just example.
 
 
                 print("--------------------------------------------------------------")
