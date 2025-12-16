@@ -810,7 +810,7 @@ def main():
    
     
     parser.add_argument("--path", type=str, default="./results")
-    parser.add_argument("--device", default="cuda", help="cuda / cpu")
+    parser.add_argument("--device", default="cuda:0", help="cuda / cpu")
 
     
 
