@@ -583,6 +583,7 @@ def run(args):
     
 
     else:
+        print(f"prompt set does not exist in ./prompt_set")
         raise
 
     
