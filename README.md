@@ -83,6 +83,7 @@ Download and place at 'prompt_set/'
 ## Citation
 If you find this code useful for your research, please cite as follows:
 
+```bash
 @misc{chang2025dynamicvlmguidednegativeprompting,
       title={Dynamic VLM-Guided Negative Prompting for Diffusion Models}, 
       author={Hoyeon Chang and Seungjin Kim and Yoonseok Choi},
@@ -92,5 +93,6 @@ If you find this code useful for your research, please cite as follows:
       primaryClass={cs.CV},
       url={https://arxiv.org/abs/2510.26052}, 
 }
+```
 
 [Paper Link](https://arxiv.org/pdf/2510.26052)
