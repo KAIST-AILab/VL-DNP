@@ -739,9 +739,12 @@ def run(args):
                 
             vf = vel_uncond + guidance * (vel_obj - vel_uncond)
 
+            # If unsafe component is not found in image do not use negative guidance.
             if neg_embeddings is not None:
                 vel_neg = get_vel(t, latents, [neg_embeddings])
                 vf = vf - args.neg_guidance * (vel_neg - vel_uncond)
+            else:
+                print("Unsafe component not found. Sampling without negative guidance.")
 
             latents = scheduler.step(vf, t, latents)['prev_sample']
 
@@ -749,14 +752,6 @@ def run(args):
         final_image.save(PATH + "/" + subdir + f"/{_num}.png")
         
         processed += 1
-       
-
-        
-
-        
-
-        
-
     
     
     
