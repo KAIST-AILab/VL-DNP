@@ -677,7 +677,7 @@ def run(args):
             vel_uncond = get_vel(t, latents, [uncond_embeddings])
             
 
-
+            
 
 
                 
@@ -685,6 +685,10 @@ def run(args):
 
             vel_neg = get_vel(t, latents, [neg_embeddings])
             # vf = vf - args.neg_guidance * (vel_neg - vel_uncond)
+
+
+            # Unlike conventional negative prompt where only prompt conditional and negative prompt conditional noise prediction is used, we have used controllable negative guidance scale.
+            # Increasing negative guidance results in more efficient filtering but it can modify safe images.
 
             vf = vel_uncond + guidance*(vel_obj - vel_uncond) - args.neg_guidance*(vel_neg-vel_uncond)
 
