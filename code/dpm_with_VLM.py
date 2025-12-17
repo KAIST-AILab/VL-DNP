@@ -615,6 +615,7 @@ def run(args):
         # fixed prompt mode: prepare once and never call the VLM
         # ------------------------------------------------------------------
         if args.fixed_neg_prompt:
+            print("Fixed negative prompt with VLM is not supproted.")
             neg_embeddings = get_text_embedding([FIXED_GLOBAL_NEG] * args.batch_size)
         else:
             neg_embeddings = None 
@@ -673,9 +674,7 @@ def run(args):
     
         scheduler.set_timesteps(args.num_inference_steps)
 
-        init_noise_sigma = scheduler.sigmas[0]
         
-        latents = latents
 
 
 
@@ -686,7 +685,7 @@ def run(args):
             a_bar_t = scheduler.alphas_cumprod[scheduler.timesteps[i]]
 
 
-            # diffusion output for denoising
+            # Diffusion output for denoising
             vel_obj = get_vel(t, latents, [obj_embeddings])
             vel_uncond = get_vel(t, latents, [uncond_embeddings])
 
