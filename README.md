@@ -80,7 +80,7 @@ Adversarial Prompt Sets are from
 
 Download and place at 'prompt_set/'
 
-## Citation
+## 6 Citation
 If you find this code useful for your research, please cite as follows:
 
 ```bash
