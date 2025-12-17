@@ -80,4 +80,7 @@ Adversarial Prompt Sets are from
 
 Download and place at 'prompt_set/'
 
+## Citation
+If you want to utilize our code, please cite following format:
+
 [Paper Link](https://arxiv.org/pdf/2510.26052)
