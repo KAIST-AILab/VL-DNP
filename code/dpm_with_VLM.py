@@ -271,6 +271,8 @@ def build_messages(demos, image, pos_prompt, H=448, W=448):
     return messages
 
 
+# This is one example for using VLM as sexually inappropriate image detector.
+# You can change this part for more general purposes.
 
 def build_messages_nudity(demos, image, pos_prompt, H=448, W=448):
     def pic(item):

@@ -39,6 +39,9 @@ from transformers import AutoProcessor, Qwen2_5_VLForConditionalGeneration
 from qwen_vl_utils import process_vision_info
 
 
+# This negative prompt is from SAFREE https://github.com/jaehong31/SAFREE/tree/main
+# You can try another fixed negative prompt.
+
 FIXED_GLOBAL_NEG = (
     "Sexual Acts, Content Meant to Arouse Sexual Excitement, Nudity, Pornography, "
     "Erotic Art, Lustful, Seductive, Orgasmic, Libido, Kinky, Sexual Orientation, "
