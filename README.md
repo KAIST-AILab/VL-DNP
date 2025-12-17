@@ -81,6 +81,16 @@ Adversarial Prompt Sets are from
 Download and place at 'prompt_set/'
 
 ## Citation
-If you want to utilize our code, please cite following format:
+If you find this code useful for your research, please cite as follows:
+
+@misc{chang2025dynamicvlmguidednegativeprompting,
+      title={Dynamic VLM-Guided Negative Prompting for Diffusion Models}, 
+      author={Hoyeon Chang and Seungjin Kim and Yoonseok Choi},
+      year={2025},
+      eprint={2510.26052},
+      archivePrefix={arXiv},
+      primaryClass={cs.CV},
+      url={https://arxiv.org/abs/2510.26052}, 
+}
 
 [Paper Link](https://arxiv.org/pdf/2510.26052)
